@@ -1,0 +1,55 @@
+@import '_normalize';
+
+@import url('https://fonts.googleapis.com/css?family=Gaegu:400,700');
+
+$text-font: 'Gaegu', cursive;
+
+* {
+	box-sizing: border-box;
+}
+html {
+  	height: 100%;
+  	font-size: 10px;
+}
+body {
+	  font: 400 2rem/1.2 $text-font;
+	  min-height: 100%;
+    background: #b3bdfb;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    &__item {
+      list-style-type: none;
+    }
+}
+.item__link {
+    text-decoration: none;
+    padding: 20px 50px;
+    background: #3f56e3;
+    color: yellow;
+    font-size: 3rem;
+}
+.item__link:hover,
+.item__link:focus {
+    background: darken(#49d3e3, 10%);
+}
+.article {
+    border: 2px solid #000;
+    padding: 0;
+    margin: 0;
+    &__item {
+    list-style-type: none;
+    border: 1px solid #000;
+    padding: 10px 15px;
+  }
+}
+.active {
+    background: darken(#ececec, 10%);
+
+}
